@@ -15,6 +15,7 @@ namespace Utils.LiveData
                 
                 onValueChanged?.Invoke(value);
                 onValueChangedWithBuffer?.Invoke(_value, value);
+                _value = value;
             }
         }
 

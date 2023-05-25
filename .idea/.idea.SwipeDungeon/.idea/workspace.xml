@@ -1,37 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a80d341-ea8b-4cac-90bb-afb12d88feb6" name="Changes" comment="" />
+    <list default="true" id="8a80d341-ea8b-4cac-90bb-afb12d88feb6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/DamageInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/DamageInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/HitInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/HitInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/MovementOutput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/MovementOutput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/DataObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/DataObjects/DamageInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/DataObjects/DamageInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/EntityType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/EntityType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/IMovementStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/IMovementStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/PlayerInputMovementStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/PlayerInputMovementStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/SimpleDiagonalMovementStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Movement/MovementStrategies/SimpleDiagonalMovementStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Stats.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Stats/EntityStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Stats/EntityStats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Stats/StartEntityStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Stats/StartEntityStats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneMonoInstallers/PlayerMonoInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneMonoInstallers/PlayerMonoInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/IPlayerInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/IPlayerInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInputPanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/PlayerInputPanel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/Vector2Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Extensions/Vector2Extensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/IsExternalInit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/IsExternalInit.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SwipeDungeon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SwipeDungeon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Interfaces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Interfaces/IPlayerStatsEffector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Interfaces/IPlayerStatsEffector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StartPlayerStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StartPlayerStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../SwipeDunjeon/Assets/Scripts/Old/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QEXDW90A7qhU0PhuWXKrx6ZtwF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Parfenov Egor\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Parfenov Egor\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Parfenov Egor\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Parfenov Egor\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Parfenov Egor\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Parfenov Egor\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe" />
@@ -59,10 +121,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="39956">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="39956" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -78,7 +140,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684919596165</updated>
-      <workItem from="1684919599270" duration="8691000" />
+      <workItem from="1684919599270" duration="14569000" />
+      <workItem from="1685014073356" duration="182000" />
+      <workItem from="1685014275234" duration="1947000" />
     </task>
     <servers />
   </component>

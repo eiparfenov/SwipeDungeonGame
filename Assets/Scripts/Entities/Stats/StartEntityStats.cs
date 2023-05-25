@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Player
+namespace Entities.Stats
 {
     [Serializable]
-    public class StartPlayerStats
+    public class StartEntityStats
     {
         [field: SerializeField] public float Health { get; private set; }
         [field: SerializeField] public float Speed { get; private set; }

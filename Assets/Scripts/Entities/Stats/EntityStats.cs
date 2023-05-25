@@ -1,11 +1,11 @@
 ﻿using Utils.LiveData;
 using Zenject;
 
-namespace Player
+namespace Entities.Stats
 {
-    public class PlayerStats
+    public class EntityStats
     {
-        private readonly StartPlayerStats _startPlayerStats;
+        private readonly StartEntityStats _startPlayerStats;
         public MutableLiveData<float> Damage { get; } = new();
         public MutableLiveData<float> Speed { get; } = new();
         public MutableLiveData<float> AttackRate { get; } = new();
@@ -15,21 +15,21 @@ namespace Player
         public MutableLiveData<int> Coins { get; } = new();
 
         [Inject]
-        public PlayerStats(StartPlayerStats startPlayerStats)
+        public EntityStats(StartEntityStats startPlayerStats)
         {
             _startPlayerStats = startPlayerStats;
+            Reset(true);
         }
 
-        public void Reset(bool resetHealthAndCoins = false)
+        public void Reset(bool resetHealth = false)
         {
             Damage.Value = _startPlayerStats.Damage;
-            Speed.Value = _startPlayerStats.Damage;
-            AttackRate.Value = _startPlayerStats.Damage;
-            MaxHealth.Value = _startPlayerStats.Damage;
-            Damage.Value = _startPlayerStats.Damage;
+            Speed.Value = _startPlayerStats.Speed;
+            AttackRate.Value = _startPlayerStats.AttackRate;
+            MaxHealth.Value = _startPlayerStats.Health;
             KnockBack.Value = _startPlayerStats.KnockBack;
 
-            if (resetHealthAndCoins)
+            if (resetHealth)
             {
                 Health.Value = _startPlayerStats.Health;
                 Coins.Value = 0;
